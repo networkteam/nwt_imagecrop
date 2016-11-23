@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'nwt_imagecrop'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tt_content.tx_nwtimagecrop_cropscaling">Cropscaling</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling.I.0">Activated</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio">Aspect Ratio</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.0">-</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.1">1:1</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.2">16:9</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.3">4:3</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.4">9:16</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.5">3:4</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient">Position</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.0">Center Center</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.1">Above Left</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.2">Above Center</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.3">Above Right</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.4">Center Right</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.5">Below Right</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.6">Below Center</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.7">Below Left</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.8">Center Left</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tt_content.tx_nwtimagecrop_cropscaling">Bildzuschnitt</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling.I.0">Aktiviert</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio">Seitenverhältnis</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.0">-</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.1">1:1</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.2">16:9</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.3">4:3</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.4">9:16</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.5">3:4</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient">Position</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.0">Mittig Mittig</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.1">Oben link</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.2">Oben mittig</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.3">Oben rechts</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.4">Mittig rechts</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.5">Unten rechts</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.6">Unten mittig</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.7">Unten links</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.8">Mittig links</label>
+		</languageKey>
+	</data>
+</T3locallang>

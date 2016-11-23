@@ -1,0 +1,138 @@
+tt_content.image.20.1.file {
+	height {
+		field = imageheight
+		override.cObject = TEXT
+		override.cObject {
+			if.isTrue.field = tx_nwtimagecrop_cropscaling
+			field = imageheight
+			wrap = |c
+
+			# use cropscaling ratio field if imageheight is not set
+			override.cObject = TEXT
+			override.cObject {
+				if.isFalse.field = imageheight
+				field = imagewidth
+				stdWrap.dataWrap = |*(1/({field:tx_nwtimagecrop_cropscaling_ratio}))
+				prioriCalc = 1
+			}
+
+			# use cropscaling ratio field if imagewidth is not set
+			outerWrap.cObject = CASE
+			outerWrap.cObject {
+				key.field = tx_nwtimagecrop_cropscaling_orient
+				default = TEXT
+				default.value = |-0
+				1 < .default
+				1.value = |-{$plugin.tx_nwtimagecrop_cropscaling.faktor}
+				2 < .1
+				3 < .1
+
+				5 < .1
+				5.value = |+{$plugin.tx_nwtimagecrop_cropscaling.faktor}
+				6 < .5
+				7 < .5
+			  }
+		}
+	}
+
+	width {
+		field = imagewidth
+		override.cObject = TEXT
+		override.cObject {
+			if.isTrue.field = tx_nwtimagecrop_cropscaling
+			field = imagewidth
+			wrap = |c
+
+			# use cropscaling ratio field if imagewidth is not set
+			override.cObject = TEXT
+			override.cObject {
+				if.isFalse.field = imagewidth
+				field = imageheight
+				stdWrap.dataWrap = |*({field:tx_nwtimagecrop_cropscaling_ratio})
+				prioriCalc = 1
+			}
+
+			# set cropscaling orientation
+			outerWrap.cObject = CASE
+			outerWrap.cObject {
+				key.field = tx_nwtimagecrop_cropscaling_orient
+				default = TEXT
+				default.value = |-0
+				1 < .default
+				1.value = |-{$plugin.tx_nwtimagecrop_cropscaling.faktor}
+				7 < .1
+				8 < .1
+
+				3 < .default
+				3.value = |+{$plugin.tx_nwtimagecrop_cropscaling.faktor}
+				4 < .3
+				5 < .3
+			}
+		}
+	}
+}
+tt_content.image.20.equalH.if.isFalse.field = tx_nwtimagecrop_cropscaling
+
+# disable normal maxWidth logic - otherwise cropscaling is completely ignored
+tt_content.image.20.maxW.override.override.cObject = TEXT
+tt_content.image.20.maxW.override.override.cObject {
+	if.isTrue.field = tx_nwtimagecrop_cropscaling
+	value = 9999
+}
+tt_content.image.20.maxWInText.override.override.cObject < tt_content.image.20.maxW.override.override.cObject
+
+# override content width only with maxWidth to get correct positioning
+tt_content.image.20.imageStdWrap.dataWrap.override = <div class="csc-textpic-imagewrap" style="width:{$styles.content.imgtext.maxW}px;"> | </div>
+tt_content.image.20.imageStdWrap.dataWrap.override.if {
+	isTrue.field = tx_nwtimagecrop_cropscaling
+	value = {$styles.content.imgtext.maxW}
+	isGreaterThan.field = imagewidth
+	isGreaterThan.stdWrap.dataWrap = |*{field:imagecols} + {$styles.content.imgtext.colSpace}*{field:imagecols}
+	isGreaterThan.prioriCalc = 1
+}
+
+# use sourceCollection
+tt_content.image.20.1.sourceCollectionCropscaling {
+	height {
+		if.isTrue.field = tx_nwtimagecrop_cropscaling
+		cObject = TEXT
+		cObject {
+			# set as value so you can copy only this value for activation
+			value < .width
+			stdWrap.dataWrap = |*({field:imageheight}/{field:imagewidth})
+			stdWrap.dataWrap {
+				# use cropscaling ratio field if imageheight is not set
+				override = |*(1/({field:tx_nwtimagecrop_cropscaling_ratio}))
+				override.if.isFalse.field = imageheight
+			}
+			prioriCalc = 1
+		}
+		wrap = |c
+
+		# set cropscaling orientation
+		outerWrap.cObject < tt_content.image.20.1.file.height.override.cObject.outerWrap.cObject
+	}
+
+	width.stdWrap {
+		if.isTrue.field = tx_nwtimagecrop_cropscaling
+		wrap = |c
+
+		# set cropscaling orientation
+		outerWrap.cObject < tt_content.image.20.1.file.width.override.cObject.outerWrap.cObject
+	}
+}
+
+# activate in typo3 default sourceCollections
+/*
+tt_content.image.20.1.sourceCollection.small {
+	height < tt_content.image.20.1.sourceCollectionCropscaling.height
+	height.cObject.value < .width
+	width.stdWrap < tt_content.image.20.1.sourceCollectionCropscaling.width.stdWrap
+}
+
+tt_content.image.20.1.sourceCollection.smallRetina {
+	height < tt_content.image.20.1.sourceCollectionCropscaling.height
+	height.cObject.value < .width
+	width.stdWrap < tt_content.image.20.1.sourceCollectionCropscaling.width.stdWrap
+}
+*/

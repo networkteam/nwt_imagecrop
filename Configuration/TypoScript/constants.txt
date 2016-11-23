@@ -1,0 +1,4 @@
+plugin.tx_nwtimagecrop_cropscaling {
+	# cat=content,basic/cImage/000; type=int+; label=Cropscaling-Factor: The factor of cropping in percent
+	faktor = 100
+}
