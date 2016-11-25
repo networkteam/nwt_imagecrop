@@ -8,14 +8,14 @@
 		<languageKey index="default" type="array">
 			<label index="tt_content.tx_nwtimagecrop_cropscaling">Cropscaling</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling.I.0">Activated</label>
-			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio">Aspect Ratio</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio">Cropscaling: Aspect Ratio</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.0">-</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.1">1:1</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.2">16:9</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.3">4:3</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.4">9:16</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.5">3:4</label>
-			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient">Position</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient">Cropscaling: Section</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.0">Center Center</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.1">Above Left</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.2">Above Center</label>
@@ -29,14 +29,14 @@
 		<languageKey index="de" type="array">
 			<label index="tt_content.tx_nwtimagecrop_cropscaling">Bildzuschnitt</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling.I.0">Aktiviert</label>
-			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio">Seitenverhältnis</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio">Bildzuschnitt: Seitenverhältnis</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.0">-</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.1">1:1</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.2">16:9</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.3">4:3</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.4">9:16</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling_ratio.I.5">3:4</label>
-			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient">Position</label>
+			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient">Bildzuschnitt: Ausschnitt</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.0">Mittig Mittig</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.1">Oben link</label>
 			<label index="tt_content.tx_nwtimagecrop_cropscaling_orient.I.2">Oben mittig</label>
