@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file t3:id="1415814857" source-language="en" target-language="de" datatype="plaintext" original="messages" date="2016-11-25T20:22:33Z" product-name="nwt_imagecrop">
+		<header/>
+		<body>
+			<trans-unit id="tx_nwtimagecrop_cropscaling.description">
+				<source>If set, all images have always the exact width and height. The image will be croped.</source>
+				<target>Wenn der Haken gesetzt ist, haben alle Bilder immer genau die angegebene Breite und Höhe. Überstehende Bereiche werden ggf. dadurch abgeschnitten.</target>
+			</trans-unit>
+			<trans-unit id="tx_nwtimagecrop_cropscaling.details">
+				<source></source>
+			</trans-unit>
+			<trans-unit id="tx_nwtimagecrop_cropscaling.syntax">
+				<source></source>
+			</trans-unit>
+			<trans-unit id="tx_nwtimagecrop_cropscaling.image">
+				<source></source>
+			</trans-unit>
+			<trans-unit id="tx_nwtimagecrop_cropscaling.image_descr">
+				<source></source>
+			</trans-unit>
+			<trans-unit id="tx_nwtimagecrop_cropscaling.seeAlso">
+				<source></source>
+			</trans-unit>
+			<trans-unit id="tx_nwtimagecrop_cropscaling.alttitle">
+				<source></source>
+			</trans-unit>
+			<trans-unit id="tx_nwtimagecrop_cropscaling_orient.description">
+				<source>Choose the significant picture area</source>
+				<target>Wählen Sie die Position des signifikanten Bereiches</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
